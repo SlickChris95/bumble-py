@@ -2,6 +2,8 @@ import webbrowser
 import pyautogui
 import time
 
+
+
 url = 'https://bumble.com/app'
 chrome_path = 'C:/Program Files (x86)/Google/Chrome/Application/chrome.exe %s'
 webbrowser.get(chrome_path).open(url)
@@ -10,12 +12,12 @@ webbrowser.get(chrome_path).open(url)
 time.sleep(5.3)
 
 i = 0
-while i < 5:
+while i < 550:
     # pyautogui.click(1265,981)
     pyautogui.press("right")
-    time.sleep(2.2)
+    time.sleep(.2)
     i = i + 1
-
+    print(i)
 time.sleep(3)
 
 print('All Done.')
